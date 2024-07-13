@@ -2,19 +2,19 @@ import {assets} from '../assets/assets'
 
 const Sidebar = () => {
   return (
-    <div className="w-80 flex-col lg:flex hidden gap-3">
-        <div className="h-[15%] bg-[#121212] space-y-5 py-5">
-            <div className="flex items-center gap-5 pl-5">
+    <div className="w-[26%] flex-col lg:flex hidden gap-3">
+        <div className="h-[20%] bg-[#121212] flex flex-col justify-around rounded py-3 gap-5">
+            <div className="flex items-center gap-5 pl-5 cursor-pointer">
                 <img src={assets.home_icon} alt="" className='w-6'/>
                 <p className='font-bold text-white'>Home</p>
             </div>
-            <div className="flex items-center gap-5 pl-5">
+            <div className="flex items-center gap-5 pl-5 cursor-pointer">
                 <img src={assets.search_icon} alt="" className='w-6'/>
                 <p className='font-bold text-white'>Search</p>
             </div>
         </div>
-        <div className='h-[85%] bg-[#121212]'>
-            <div className='space-y-5'>
+        <div className='h-[80%] bg-[#121212]'>
+            <div className='space-y-5 overflow-auto'>
                 <div className='flex justify-between px-5 pt-4'>
                     <div className='flex items-center gap-3 text-gray-400'>
                         <img src={assets.stack_icon} alt="" className='w-6'/>

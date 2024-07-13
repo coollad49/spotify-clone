@@ -2,9 +2,9 @@ import { assets, songsData } from "../assets/assets"
 
 const Player = () => {
   return (
-    <div className="h-[10%] flex p-4 pb-6 items-center justify-between">
-        <div className="flex items-center gap-4">
-            <img src={songsData[0].image} alt="" className="w-12 rounded-md"/>
+    <div className="h-[10%] flex px-2 items-center justify-between">
+        <div className="flex items-center gap-7">
+            <img src={songsData[0].image} alt="" className="w-12 rounded-sm"/>
             <div className="gap-3">
                 <h3 className="text-white font-bold">{songsData[0].name}</h3>
                 <p className="text-gray-300 text-xs font-light">{songsData[0].desc.slice(0,12)}</p>
@@ -22,9 +22,9 @@ const Player = () => {
                 <img src={assets.loop_icon} alt="" className="w-4 cursor-pointer"/>
             </div>
             <div className="flex gap-3 text-white items-center">
-                <p className="text-sm text-gray-400">1:00</p>
-                <div className="bg-gray-300 w-[60vw] max-w-[500px] rounded-full">
-                    <hr className="h-1 bg-green-500 border-none rounded-full w-[25%]"/>
+                <p className="text-sm text-gray-400">3:30</p>
+                <div className="bg-gray-600 w-[35vw] max-w-[400px] rounded-full">
+                    <hr className="h-1 bg-white border-none rounded-full w-[10%]"/>
                 </div>
                 <p className="text-sm text-gray-400">4:00</p>
             </div>
