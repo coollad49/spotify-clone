@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar"
 
 const App = () => {
   return (
-    <div className="h-screen bg-black p-2">
+    <div className="h-screen bg-black px-2 pt-2">
       <div className="h-[90%] flex gap-3">
         <Sidebar/>
         <Display/>

@@ -1,8 +1,9 @@
+import Navbar from "./Navbar"
 
 const Home = () => {
   return (
-    <div>
-
+    <div className="bg-[#121212] h-full rounded p-5">
+        <Navbar/>
     </div>
   )
 }

@@ -13,7 +13,7 @@ const Player = () => {
                 <span className="pe-[1px] pb-[1.7px]">+</span>
             </div>
         </div>
-        <div className="flex flex-col items-center gap-3 ">
+        <div className="flex flex-col items-center gap-2">
             <div className="flex gap-5">
                 <img src={assets.shuffle_icon} alt="" className="w-4 cursor-pointer"/>
                 <img src={assets.prev_icon} alt="" className="w-4 cursor-pointer"/>
