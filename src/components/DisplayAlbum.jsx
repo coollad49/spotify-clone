@@ -34,9 +34,9 @@ const DisplayAlbum = () => {
        <hr className="my-3 border-gray-500"/>
         {songsData.map((item, index)=>(
           <div key={index} className="grid grid-cols-3 sm:grid-cols-4 text-[#a7a7a7] hover:bg-[#ffffff2b] gap-2 items-center p-2 cursor-pointer">
-            <p className="text-white">
-              <b className="mr-4 text-[#a7a7a7]">{item.id+1}</b>
-              <img src={item.image} alt="" className="inline w-10 mr-4 rounded"/>
+            <p className="text-white text-nowrap">
+              <b className="mr-4 text-[#a7a7a7]">{index+1}</b>
+              <img src={item.image} alt="" className="inline w-6  sm:w-10 mr-4 rounded"/>
               {item.name}</p>
             <p className="text-[15px]">{albumData.name}</p>
             <p className="hidden sm:block text-sm">5 days ago</p>
