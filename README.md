@@ -40,9 +40,9 @@ This project is a Spotify clone built using React. It mimics the core features o
 + Frontend: React
 + State Management: Redux
 + Routing: React Router
-+ Styling: CSS Modules or styled-components (specify which one is used)
++ Styling: Tailwind-CSS
 ## Usage
-1. Visit http://localhost:3000 in your browser to access the application.
+1. Visit http://localhost:5173 in your browser to access the application.
 2. Explore the music library, search for your favorite songs, create playlists, and enjoy music streaming.
 ## Contributing
 1. Fork the repository
