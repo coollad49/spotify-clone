@@ -52,4 +52,4 @@ This project is a Spotify clone built using React. It mimics the core features o
 5. Push to the branch (git push origin feature/your-feature-name)
 6. Open a pull request
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/coollad49/spotify-clone?tab=MIT-1-ov-file#) file for more details.
