@@ -13,7 +13,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="flex gap-3">
-                <div className="bg-white rounded-full py-1 px-3 font-semibold text-black">
+                <div className="hidden lg:block bg-white rounded-full py-1 px-3 font-semibold text-black">
                     <span>Explore Premium</span>
                 </div>
                 <div className="bg-black rounded-full py-1 px-4 font-semibold">
