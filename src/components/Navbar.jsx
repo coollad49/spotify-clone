@@ -8,11 +8,11 @@ const Navbar = () => {
     <div className="space-y-4">
         <div className="flex justify-between">
             <div className="flex gap-4">
-                <div className="bg-black rounded-full p-2 cursor-pointer">
-                    <img onClick={()=>navigate(-1)} src={assets.arrow_left} alt="" className="w-4"/>
+                <div onClick={()=>navigate(-1)} className="bg-black rounded-full p-2 cursor-pointer">
+                    <img src={assets.arrow_left} alt="" className="w-4"/>
                 </div>
-                <div className="bg-black rounded-full p-2 cursor-pointer">
-                    <img onClick={()=>navigate(1)} src={assets.arrow_right} alt="" className="w-4"/>
+                <div onClick={()=>navigate(1)} className="bg-black rounded-full p-2 cursor-pointer">
+                    <img src={assets.arrow_right} alt="" className="w-4"/>
                 </div>
             </div>
             <div className="flex gap-3">
