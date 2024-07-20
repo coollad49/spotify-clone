@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { assets, songsData } from "../assets/assets"
+import { PlayerContext } from "../context/PlayerContext";
 
 const Player = () => {
+    const {play, pause, playStatus} = useContext(PlayerContext);
   return (
     <div className="h-[10%] flex px-2 items-center justify-center lg:justify-between">
         <div className="lg:flex items-center gap-7 hidden">
@@ -17,7 +20,9 @@ const Player = () => {
             <div className="flex gap-5">
                 <img src={assets.shuffle_icon} alt="" className="w-4 cursor-pointer"/>
                 <img src={assets.prev_icon} alt="" className="w-4 cursor-pointer"/>
-                <img src={assets.play_icon} alt="" className="w-4 cursor-pointer"/>
+                {playStatus ?<img onClick={()=>pause()} src={assets.pause_icon} alt="" className="w-4 cursor-pointer"/> : <img onClick={()=>play()} src={assets.play_icon} alt="" className="w-4 cursor-pointer"/>}
+                
+                
                 <img src={assets.next_icon} alt="" className="w-4 cursor-pointer"/>
                 <img src={assets.loop_icon} alt="" className="w-4 cursor-pointer"/>
             </div>
