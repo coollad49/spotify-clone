@@ -1,16 +1,16 @@
 import { useContext } from "react";
-import { assets, songsData } from "../assets/assets"
+import { assets} from "../assets/assets"
 import { PlayerContext } from "../context/PlayerContext";
 
 const Player = () => {
-    const {play, pause, playStatus} = useContext(PlayerContext);
+    const {play, pause, playStatus, track, time, seekBar} = useContext(PlayerContext);
   return (
     <div className="h-[10%] flex px-2 items-center justify-center lg:justify-between">
         <div className="lg:flex items-center gap-7 hidden">
-            <img src={songsData[0].image} alt="" className="w-12 rounded-sm"/>
+            <img src={track.image} alt="" className="w-12 rounded-sm"/>
             <div className="gap-3">
-                <h3 className="text-white font-bold">{songsData[0].name}</h3>
-                <p className="text-gray-300 text-xs font-light">{songsData[0].desc.slice(0,12)}</p>
+                <h3 className="text-white font-bold">{track.name}</h3>
+                <p className="text-gray-300 text-xs font-light">{track.desc.slice(0,12)}</p>
             </div>
             <div className="w-5 h-5 font-bold rounded-full border-2 border-gray-400 text-gray-400 flex items-center justify-center cursor-pointer">
                 <span className="pe-[1px] pb-[1.7px]">+</span>
@@ -27,11 +27,11 @@ const Player = () => {
                 <img src={assets.loop_icon} alt="" className="w-4 cursor-pointer"/>
             </div>
             <div className="flex gap-3 text-white items-center">
-                <p className="text-sm text-gray-400">3:30</p>
+                <p className="text-sm text-gray-400">{time.currentTime.minutes}:{time.currentTime.seconds}</p>
                 <div className="bg-gray-600 w-[50vw] max-w-[400px] rounded-full">
-                    <hr className="h-1 bg-white border-none rounded-full w-[10%]"/>
+                    <hr ref={seekBar} className="h-1 bg-white border-none rounded-full"/>
                 </div>
-                <p className="text-sm text-gray-400">4:00</p>
+                <p className="text-sm text-gray-400">{time.totalTime.minutes}:{time.totalTime.seconds}</p>
             </div>
         </div>
 
