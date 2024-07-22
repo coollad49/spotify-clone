@@ -43,6 +43,13 @@ const PlayerContextProvider = ({children}) => {
         audioRef.current.play()
         setPlayStatus(true)
     }
+
+    const playWithId = async (id)=>{
+        await setTrack(songsData[id])
+        await audioRef.current.play()
+        setPlayStatus(true)
+    }
+
     const pause = ()=>{
         audioRef.current.pause()
         setPlayStatus(false)
@@ -55,7 +62,8 @@ const PlayerContextProvider = ({children}) => {
         play,
         pause,
         time,setTime,
-        seekBar
+        seekBar,
+        playWithId,
     }
 
     return (

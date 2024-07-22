@@ -17,7 +17,7 @@ const Display_chart = () => {
             <h1 className="font-bold text-2xl pt-1">{"Today's biggest Hit"}</h1>
             <div className="flex mt-3 gap-2 overflow-auto">
                 {songsData.map((item, index)=>(
-                    <SongsItem key={index} img={item.image} name={item.name} desc={item.desc} />
+                    <SongsItem key={index} img={item.image} name={item.name} desc={item.desc} id={item.id}/>
                 ))}
             </div>
         </div>
